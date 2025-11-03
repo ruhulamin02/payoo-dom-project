@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Google font -->
+     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- tailwind -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/tailwind.css">
+
+</head>
+
+<body>
+
+    <section class="max-w-md min-h-screen bg-[#F4F5F7] mx-auto py-6">
+
+        <!-- Header -->
+        <header>
+            <nav class="flex justify-center items-center ">
+                <div class=" relative flex justify-center items-center w-9/12 mb-10 mt-20">
+
+                    <img class="w-48 absolute" src="/assets/bg.png" alt="">
+                    <img class=" w-16 " src="/assets/Group.png" alt="">
+
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- Login form -->
+         <form>
+
+        <fieldset class="  mx-auto font-[outfit] space-y-2 fieldset bg-base-200 border-base-300 rounded-box w-xs border p-4">
+        
+
+            <label class="font-semibold text-sm">Mobile Number</label>
+            <input id="mobile-number" type="tel" value="01301301301" pattern="[1-9]{4}" maxlength="11" class="input bg-gray-200 border-none rounded-2xl text-gray-500" placeholder="Enter Your number" required />
+
+            <label class="font-semibold text-sm">4 digit pin</label>
+            <input id="pin"type="password" value="1234" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" class="input bg-gray-200 border-none  rounded-2xl text-gray-500" placeholder="Enter 4 digit pin" required />
+
+            <button id="login-btn" class="btn bg-blue-600 text-white rounded-2xl mt-4">Login</button>
+        </fieldset>
+        </form>
+
+
+
+    </section>
+    
+    <script src="script/login.js"></script>
+
+</body>
+
+</html>
